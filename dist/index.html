@@ -4,7 +4,24 @@
     <title>Web Components with Webpack Starter Kit</title>
   </head>
   <body>
-    <my-app></my-app>
+    <!--my-app></my-app-->
+    <my-dropdown label="Dropdown"
+    option="option2"></my-dropdown>
+
+    <script>
+      document.querySelector('my-dropdown').options = {
+        option1: {
+          label: "Option 1"
+        },
+        option2: {
+          label: "Option 2"
+        }
+      };
+
+      document.querySelector('my-dropdown').addEventListener('onChange',event=>console.log(event.detail));
+
+      //document.querySelector('my-dropdown').label = "This is a dropdown";
+      </script>
     <script src="./bundle.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import './components/say-something.js';
+/*import './components/say-something.js';
 
 const template = document.createElement('template');
 
@@ -40,3 +40,7 @@ class App extends HTMLElement {
 }
 
 window.customElements.define('my-app', App);
+*/
+
+import './components/my-button.js'
+import './components/my-dropdown.js'
