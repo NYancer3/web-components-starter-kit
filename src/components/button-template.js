@@ -29,5 +29,4 @@ template.innerHTML = `
     <button>Label</button>
   </div>
 `;
-
 module.exports = template
